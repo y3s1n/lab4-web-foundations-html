@@ -83,11 +83,10 @@
                 <input list="cs-fields" id="field-choice" name="field-choice">
                 
                 <datalist id="cs-fields">
-                    <optgroup>
-                        <option value="CyberSecurity"></option>
-                        <option value="SoftwareEngineer"></option>
-                        <option value="DataScience"></option>
-                    </optgroup>
+                        <option label="cs" value="CyberSecurity"></option>
+                        <option label="swe" value="SoftwareEngineer"></option>
+                        <option label="ds" value="DataScience"></option>
+                        
                 </datalist>
 
                 <br><br>
@@ -120,7 +119,7 @@
 
                 <label for="color-select">Pick your favorite color</label>
                 <select name="colors" id="color-select">
-                    <optgroup>
+                    <optgroup label="colors">
                         <option value="red">Red</option>
                         <option value="green">Green</option>
                         <option value="blue">Blue</option>
@@ -152,11 +151,10 @@
             <table>
                 <caption>Elements that make up AI</caption>
                 <tr>
-                    <colgroup>
                     <td></td>
                     <th scope="col" class="Human behavior">Human Behavior</th>
                     <th scope="col" class="Rational behavior">Rational behavior</th>
-                    </colgroup>
+                    
                 </tr>
                 <tbody>
                 <tr>
@@ -254,8 +252,8 @@
             </math>
             <hr>
             <form id="addNum">
-                <input type="number" id="b" name="b" value="50" /> +
-                <input type="number" id="a" name="a" value="10" /> =
+                <input type="number" id="b" name="b" value="50" > +
+                <input type="number" id="a" name="a" value="10" > =
                 <output name="result" for="a b">60</output>
             </form>
 
