@@ -76,6 +76,21 @@
                     <dt>Data Sceience</dt>
                     <dd>description</dd>
                 </dl>
+
+                <hr>
+
+                <label for="field-choice">Pick a specalization</label>
+                <input list="cs-fields" id="field-choice" name="field-choice">
+                
+                <datalist id="cs-fields">
+                    <optgroup>
+                        <option value="CyberSecurity"></option>
+                        <option value="SoftwareEngineer"></option>
+                        <option value="DataScience"></option>
+                    </optgroup>
+                </datalist>
+
+                <br><br>
                 <search>
                     <form action="https://www.sandiego.edu/search">
                         <label for="major">find your <em>major</em> at <abbr title="University of San Diego">USD</abbr></label>
@@ -83,6 +98,35 @@
                         <button type="submit">Search</button>
                     </form>
                 </search>
+
+                <br><br>
+
+                <form>
+                    <fieldset>
+                        <legend>Choose the field you picked</legend>
+
+                        <input type="radio" id="SWE" value="swe">
+                        <label for="SWE">SoftwareEngineer</label>
+
+                        <input type="radio" id="CS" value="cs">
+                        <label for="CS">CyberSecurity</label>
+
+                        <input type="radio" id="DS" value="ds">
+                        <label for="DS">DataScience</label>
+                    </fieldset>
+                </form>
+
+                <br><br>
+
+                <label for="color-select">Pick your favorite color</label>
+                <select name="colors" id="color-select">
+                    <optgroup>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </optgroup>
+                </select>
+                <hr>
 
                 <ul>
                     <li><a href="https://www.sandiego.edu/about/history.php" title="Previously used to test base link"> Usd about history page</a></li>
@@ -169,6 +213,9 @@
             </section>    
 
             <hr>
+            <label for="text-box">Here is a text box</label>
+            <textarea name="text-box" id="text-box" rows="4" cols="25">What a spot for a text box</textarea>
+            <hr>
 
             <section>
                 <h2>Skills</h2>
@@ -205,6 +252,13 @@
                     </mrow>
                 </mfrac>
             </math>
+            <hr>
+            <form id="addNum">
+                <input type="number" id="b" name="b" value="50" /> +
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">60</output>
+            </form>
+
 
 
             <hr>
@@ -285,6 +339,9 @@
             </figure>
 
             <hr>
+
+            <label for="lab">Lab Completion:</label>
+            <progress id="lab" max="100" value="95">95%</progress>
 
             <p>&copy; <small>All Rights <s>Reserved</s></small></p>
             
