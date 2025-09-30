@@ -1,14 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <base target="_blank">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exploring HTML Elements</title>
+        <meta name="description" content="Yesin Qasem - everything but the kitchen sink in a portfolio">
+        <title>My Portfolio</title>
+        <style>
+            h1 {
+                color: blue;
+            }
+            
+            dt {
+                font-weight: bold;
+            }
+            dd {
+                font-size: 0.9rem;
+            }
+            figcaption {
+                background-color: blanchedalmond;
+                
+            }
+            abbr {
+                font-style: italic;
+                color: chocolate;
+            }
+            time{
+                color: red;
+            }
+            u {
+                text-decoration: red wavy underline;
+            }
+        </style>
+        
     </head>
     <body>
-        <!--Exploring HTML Elements-->
-        <h1>Hello HTML World</h1>
+        <header>
+            <h1><ruby>耶辛 <rp>(</rp><rt>Yesin</rt><rp>)</rp></ruby>Qasem <br>- CS portfolio </h1>
+            <h2><data value="305">Object-Oriented Software Design</data></h2>
+            <nav>
+                <p style="font-size: large; font-weight: bolder;">Computer Science:</p>
+                <dl>
+                    <dt>Software Engineering</dt>
+                    <dd><u>decripton</u></dd>
+                    <dt>Cyber Security</dt>
+                    <dd>description</dd>
+                    <dt>Data Sceience</dt>
+                    <dd>description</dd>
+                </dl>
+                <search>
+                    <form action="https://www.sandiego.edu/search">
+                        <label for="major">find your <em>major</em> at <abbr title="University of San Diego">USD</abbr></label>
+                        <input type="search" id="major" name="q">
+                        <button type="submit">Search</button>
+                    </form>
+                </search>
+
+                <ul>
+                    <li><a href="https://www.sandiego.edu/about/history.php" title="Previously used to test base link"> Usd about history page</a></li>
+                </ul>
+
+            </nav>
+
+            <div>
+            <blockquote cite="https://www.brainyquote.com/quotes/lou_holtz_120090">
+                <q>
+                    Its not the <i>load that breaks you</i>, its <mark>how you carry it</mark>
+                </q>
+            </blockquote>
+            <p>-Lou Holtz, <cite>brainyquote</cite></p>
+
+            <p><var>F = MC<sup>2</sup></var> <br> Get some H<sub>2</sub>O</p>
+            </div>
+            
+            
+        </header>
+
+        <main>
+            <section>
+                <h2>Experience</h2>
+                <article>
+                    <h3>Software Engineering Virtual Internship - JPMmorgan Chase & co <span><time datetime="2024-11">Nov 2024</time></span></h3>
+                    <aside id="sidebar">
+                       This is a side bar write a description of the role.
+                    </aside>
+                    <ul>
+                        <li><b>Integrated</b> Apache Kafka into the Midas Core Spring application to handle high volume transactions</li>
+                        <li><strong>Developed</strong> a listener service that deseralizes and process transaction data</li>
+                        <li><strong>Implemented</strong> Rest API endpoints using Spring boot to validate incoming transactions</li>
+                    </ul>
+                </article>
+            </section>
+                
+            <hr>
+
+            <section>
+                <h2 id="projects">Projects</h2>
+                <article>
+                    <h3>Projects I built at USD</h3>
+                    <ol>
+                        <li>Personal Website - deployed on AWS for <dfn>scalability</dfn></li>
+                        <li>Shell Project - developed a custom shell interface using C</li>
+                        <li>Simulated Memory - created DRAM, virtual memory, and 2 way set associative cache</li>
+                    </ol>
+                </article>
+            </section>    
+
+            <hr>
+
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Languages</strong>: Java, C/C++, Javascript, Python, HTML/CSS, MYSQL</li>
+                    <li><strong>Tools</strong>: AWS, Git, Spring Boot, Node.js</li>
+                </ul>
+                <p>Confidence level in my ability as a Software Engineer: <br>
+                     Coding <meter min="0" max="100" value="80">80%</meter>,
+                     Development <meter min="0" max="100" value="40">40%</meter>,
+                     Architecture <meter min="0" max="100" value="50">50%</meter>
+                </p>
+            </section>
+                
+            <hr>
+            <section>
+                <h2>Photos of the validator</h2>
+                <figure>
+                    <img src="validation-fail.png" width="500" alt="photo of an html validator notifying me of errors in my code">
+                    <figcaption style="color: red;">Validator failing due to errors</figcaption>
+                </figure>
+                <figure>
+                    <img src="validation-pass.png" width="500" alt="photo of an html validator notifying me of errors in my code">
+                    <figcaption style="color: green;">Validator passing</figcaption>
+                </figure>
+            </section>
+
+
+
+        </main>
+
         <hr>
-        <p title="Did you mouse me?">Soon you will &hearts; HTML as much as I do!</p>
+        <footer>
+            
+            <h2>Contact Info</h2>
+            <address>
+                <a href="mailto:example@gmail.com">example@gmail.com</a><br>
+                <a href="example@sandiego.edu">example@sandiego.edu</a>
+            </address>
+
+            <pre><p>dont    fix   my    spacing</p></pre>
+            <p>Try <kbd>alt + f4</kbd> &#128513;</p>
+            <p>&copy; <small>All Rights <s>Reserved</s></small></p>
+            
+        </footer>
+
     </body>
 </html>
